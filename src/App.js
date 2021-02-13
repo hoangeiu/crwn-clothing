@@ -1,52 +1,21 @@
 import "./App.css";
 import { Switch, Route, Redirect } from "react-router-dom";
 import React, { useEffect } from "react";
-import {
-  auth,
-  createUserProfileDocument,
-  addCollectionAndDocuments,
-} from "./firebase/firebase.utils";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
-import { selectCollectionsForPreview } from "./redux/shop/shop.selectors";
 
-import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selector";
+import { checkUserSession } from "./redux/user/user.actions";
+
 import Homepage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import Header from "./components/header/header.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 
-function App({ currentUser, setCurrentUser, collectionsArray }) {
-  // const [currentUser, setCurrentUser] = useState(null);
-
-  // unsubscribeFromAuth = null;
-
+function App({ currentUser, checkUserSession }) {
   useEffect(() => {
-    const unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
-      if (userAuth) {
-        const userRef = await createUserProfileDocument(userAuth);
-
-        userRef.onSnapshot((snapShot) => {
-          setCurrentUser({
-            id: snapShot.id,
-            ...snapShot.data(),
-          });
-        });
-      } else {
-        setCurrentUser(userAuth);
-      }
-    });
-
-    // addCollectionAndDocuments(
-    //   "collections",
-    //   collectionsArray.map(({ title, items }) => ({ title, items }))
-    // );
-
-    return () => {
-      unsubscribeFromAuth();
-    };
+    checkUserSession();
   }, []);
 
   return (
@@ -70,11 +39,10 @@ function App({ currentUser, setCurrentUser, collectionsArray }) {
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
-  collectionsArray: selectCollectionsForPreview,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  setCurrentUser: (user) => dispatch(setCurrentUser(user)),
+  checkUserSession: () => dispatch(checkUserSession()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
