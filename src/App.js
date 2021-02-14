@@ -16,7 +16,7 @@ import CheckoutPage from "./pages/checkout/checkout.component";
 function App({ currentUser, checkUserSession }) {
   useEffect(() => {
     checkUserSession();
-  }, []);
+  }, [checkUserSession]);
 
   return (
     <div>
