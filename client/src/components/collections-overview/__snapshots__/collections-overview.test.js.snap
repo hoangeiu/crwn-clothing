@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CollectionsOverview component should CollectionsOverview render without error 1`] = `
+<div
+  className="collections-overview"
+>
+  <withRouter(CollectionPreview)
+    key="1"
+  />
+  <withRouter(CollectionPreview)
+    key="2"
+  />
+  <withRouter(CollectionPreview)
+    key="3"
+  />
+  <withRouter(CollectionPreview)
+    key="4"
+  />
+  <withRouter(CollectionPreview)
+    key="5"
+  />
+</div>
+`;

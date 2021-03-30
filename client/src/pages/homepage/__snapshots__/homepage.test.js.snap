@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should HomePage render without error 1`] = `
+<styled.div>
+  <Profiler
+    id="Directory"
+    onRender={[Function]}
+  >
+    <Connect(Directory) />
+  </Profiler>
+</styled.div>
+`;

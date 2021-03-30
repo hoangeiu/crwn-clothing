@@ -4,7 +4,13 @@ import CollectionItem from "../collection-item/collection-item.component";
 
 import "./collection-preview.styles.scss";
 
-const CollectionPreview = ({ title, items, history, match, routeName }) => (
+export const CollectionPreview = ({
+  title,
+  items,
+  history,
+  match,
+  routeName,
+}) => (
   <div className="collection-preview">
     <h1
       className="title"

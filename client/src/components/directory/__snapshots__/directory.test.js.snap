@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Directory component should Directory component render without error 1`] = `
+<div
+  className="directory-menu"
+>
+  <withRouter(MenuItem)
+    key="1"
+  />
+  <withRouter(MenuItem)
+    key="2"
+  />
+  <withRouter(MenuItem)
+    key="3"
+  />
+  <withRouter(MenuItem)
+    key="4"
+  />
+  <withRouter(MenuItem)
+    key="5"
+  />
+</div>
+`;

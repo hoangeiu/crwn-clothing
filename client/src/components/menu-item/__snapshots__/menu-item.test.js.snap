@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render MenuItem component should MenuItem render without error 1`] = `
+<div
+  className="large menu-item"
+  onClick={[Function]}
+>
+  <div
+    className="background-image"
+    style={
+      Object {
+        "backgroundImage": "url(www.test.com)",
+      }
+    }
+  />
+  <div
+    className="content"
+  >
+    <h1
+      className="title"
+    >
+      HATS
+    </h1>
+    <span
+      className="subtitle"
+    >
+      SHOP NOW
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem component should CartItem renders without error 1`] = `
+<CartItem
+  imageUrl="www.test.com"
+  name="hsts"
+  price={10}
+  quantity={2}
+/>
+`;

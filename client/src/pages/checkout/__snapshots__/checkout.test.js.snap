@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should CheckoutPage render without error 1`] = `
+<div
+  className="checkout-page"
+>
+  <div
+    className="checkout-header"
+  >
+    <div
+      className="header-block"
+    >
+      <span>
+        Product
+      </span>
+    </div>
+    <div
+      className="header-block"
+    >
+      <span>
+        Description
+      </span>
+    </div>
+    <div
+      className="header-block"
+    >
+      <span>
+        Quantity
+      </span>
+    </div>
+    <div
+      className="header-block"
+    >
+      <span>
+        Price
+      </span>
+    </div>
+    <div
+      className="header-block"
+    >
+      <span>
+        Remove
+      </span>
+    </div>
+  </div>
+  <Connect(CheckoutItem)
+    cartItem={
+      Object {
+        "id": 1,
+      }
+    }
+    key="1"
+  />
+  <Connect(CheckoutItem)
+    cartItem={
+      Object {
+        "id": 2,
+      }
+    }
+    key="2"
+  />
+  <Connect(CheckoutItem)
+    cartItem={
+      Object {
+        "id": 3,
+      }
+    }
+    key="3"
+  />
+  <Connect(CheckoutItem)
+    cartItem={
+      Object {
+        "id": 4,
+      }
+    }
+    key="4"
+  />
+  <Connect(CheckoutItem)
+    cartItem={
+      Object {
+        "id": 5,
+      }
+    }
+    key="5"
+  />
+  <div
+    className="total"
+  >
+    <span>
+      TOTAL: $
+      100
+    </span>
+  </div>
+  <div
+    className="text-warning"
+  >
+    *Please use the following test credit card for payments*
+    <br />
+    4242 4242 4242 4242 - Exp: 01/23 CW: 123
+  </div>
+  <StripeCheckoutButton
+    price={100}
+  />
+</div>
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should SignInAndSignUpPage component render without error 1`] = `
+<div
+  className="sign-in-and-sign-up"
+>
+  <Connect(SignIn) />
+  <Connect(SignUp) />
+</div>
+`;

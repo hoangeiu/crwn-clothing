@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckoutItem component should CheckoutItem renders without error 1`] = `
+<div
+  className="checkout-item"
+>
+  <div
+    className="image-container"
+  >
+    <img
+      atl="item"
+      src="www.test.com"
+    />
+  </div>
+  <span
+    className="name"
+  >
+    Gucci hat
+  </span>
+  <span
+    className="quantity"
+  >
+    <div
+      className="arrow"
+      data-test="removeItem"
+      onClick={[Function]}
+    >
+      ❮
+    </div>
+    <span
+      className="value"
+    >
+      5
+    </span>
+    <div
+      className="arrow"
+      data-test="addItem"
+      onClick={[Function]}
+    >
+      ❯
+    </div>
+  </span>
+  <span
+    className="price"
+  >
+    100
+  </span>
+  <span
+    className="remove-button"
+    onClick={[Function]}
+  >
+    ✕
+  </span>
+</div>
+`;

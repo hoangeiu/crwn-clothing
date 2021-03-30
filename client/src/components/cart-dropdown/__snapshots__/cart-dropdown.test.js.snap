@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartDropdown component should CardDropdown renders without error 1`] = `
+<div
+  className="cart-dropdown"
+>
+  <div
+    className="cart-items"
+  >
+    <Memo(CartItem)
+      item={
+        Object {
+          "id": 1,
+        }
+      }
+      key="1"
+    />
+    <Memo(CartItem)
+      item={
+        Object {
+          "id": 2,
+        }
+      }
+      key="2"
+    />
+    <Memo(CartItem)
+      item={
+        Object {
+          "id": 3,
+        }
+      }
+      key="3"
+    />
+  </div>
+  <CustomButton
+    onClick={[Function]}
+  >
+    GO TO CHECKOUT
+  </CustomButton>
+</div>
+`;

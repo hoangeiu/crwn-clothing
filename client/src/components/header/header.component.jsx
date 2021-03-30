@@ -17,8 +17,8 @@ import {
   OptionLink,
 } from "./header.styles";
 
-const Header = ({ currentUser, hidden, signOutStart }) => {
-  console.log(currentUser);
+export const Header = ({ currentUser, hidden, signOutStart }) => {
+  // console.log(currentUser);
   return (
     <HeaderContainer>
       <LogoContainer to="/">
@@ -28,11 +28,13 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
         <OptionLink to="/shop">SHOP</OptionLink>
         <OptionLink to="/shop">CONTACT</OptionLink>
         {currentUser ? (
-          <OptionLink as="div" onClick={signOutStart}>
+          <OptionLink as="div" onClick={signOutStart} data-test="signOut">
             SIGN OUT
           </OptionLink>
         ) : (
-          <OptionLink to="/signin">SIGN IN</OptionLink>
+          <OptionLink to="/signin" data-test="signIn">
+            SIGN IN
+          </OptionLink>
         )}
         <CartIcon />
       </OptionsContainer>

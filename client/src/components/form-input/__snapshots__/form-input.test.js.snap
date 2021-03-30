@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormInput component should FormInput render without error 1`] = `
+<div
+  className="group"
+>
+  <input
+    className="form-input"
+    onChange={[MockFunction]}
+    value="test@gmail.com"
+  />
+  <label
+    className="shrink form-input-label"
+  >
+    email
+  </label>
+</div>
+`;
